@@ -914,6 +914,9 @@ except ValidationError as e:
       Assertion failed, must be alphanumeric [type=assertion_error, input_value='scolvi%n', input_type=str]
     """
 ```
+!!! note
+    Pickle will work for dynamically created model only if it was defined globally
+    with its class name and module where it's defined was specified.
 
 ## Using Pydantic without creating a BaseModel
 
